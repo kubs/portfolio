@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is a personal portfolio website of Hui Zhao built with NextJS, NextUI.
