@@ -31,22 +31,19 @@ export default function ThemeChanger() {
   const { isDark, type } = useTheme();
   const collapseItems = ["Home", "CV", "Projects", "About"];
   const code=`
-       class About_Me:
-
-          goal = " Discover and explore more unknowns. "  
-          degree = " Bachelor of Computer Science "
-          university = "Concordia University" 
-          skills = {
-                    Language : [ "Python", " JavaScript" , "Java" , "SQL"], 
-                    Front-end: [ " React ", " Next.js ", " Wordpress ", " TailwindCSS " ]     
-                    Back-end:  [ " Node.js ", " Flask "]
-                    Date-Analysis: [ " Excel ", " Numpy ", " Pandas "]
-                    } 
-          attitudes = ["Work smart", "Word hard"]         
-          passion = 'full' 
-          interests = [ " Reading ", "Web Programming", " Data Science ", " Automation " ]     
-          
-          
+  class About_Me:
+  goal = " Discover and explore more unknowns. "  
+  degree = " Bachelor of Computer Science "
+  university = "Concordia University" 
+  skills = {
+  Language : [ "Python", " JavaScript" , "Java" , "SQL"], 
+  Front-end: [ " React ", " Next.js ", " Wordpress ", " TailwindCSS " ]     
+  Back-end:  [ " Node.js ", " Flask "]
+  Date-Analysis: [ " Excel ", " Numpy ", " Pandas "]
+            } 
+  attitudes = ["Work smart", "Word hard"]         
+  passion = 'full' 
+  interests = [ " Reading ", "Web Programming", " Data Science "]     
   `
   return (
     <Layout>
@@ -121,10 +118,10 @@ export default function ThemeChanger() {
         <Spacer />
       </Grid.Container> */}
       <Grid.Container justify="center">
-        <Grid fluid>
+        <Grid fluid justify="center">
           <Text
-            h1
-            size={80}
+            
+            size={70}
             css={{
               textGradient: "45deg, $yellow600 -20%, $red600 100%",
               letterSpacing: "3px",
@@ -163,7 +160,7 @@ export default function ThemeChanger() {
           md={3}
           alignItems="center"
           justify="center"
-          alignItems="center"
+          
         >
           <Text>
             <FaEnvelope />
@@ -186,14 +183,16 @@ export default function ThemeChanger() {
       <hr />
       <Spacer y={1} />
 
-      <Grid.Container justify="center" >
+     
 
       
-        <Grid xs={10} sm={12} md={7} justify="center">
+        <Container xs={12} sm={12} md={12} justify="center">
+          <Row justify="center">
           <code>
             {code}
           </code>  
-        </Grid>
+          </Row>
+        </Container>
         <Spacer />
         {/* <!--Grid
           xs={8}
@@ -210,7 +209,7 @@ export default function ThemeChanger() {
             with Front-end languages and frameworks.
           </Text>
         </Grid--> */}
-      </Grid.Container>
+      
 
       <Spacer y={2} />
       
@@ -234,7 +233,7 @@ export default function ThemeChanger() {
       <Spacer />
 
       <Grid.Container justify="center" gap={8}>
-        <Grid justify="center" xs={9} sm={6} md={5}>
+        <Grid justify="center" xs={12} sm={6} md={5}>
           <Card isHoverable sm>
             <Card.Header>
               <Text weight="bold">
@@ -281,7 +280,7 @@ export default function ThemeChanger() {
             </Card.Footer>
           </Card>
         </Grid>
-        <Grid justify="center" xs={9} sm={6} md={5}>
+        <Grid justify="center" xs={12} sm={6} md={5}>
           <Card isHoverable sm>
             <Card.Header>
               <Text weight="bold">
@@ -394,7 +393,7 @@ export default function ThemeChanger() {
         </Row>
         <Spacer />
         <Grid.Container justify="center" gap={3}>
-          <Grid xs={9} sm={9} md={5}>
+          <Grid xs={12} sm={12} md={6}>
             <Card>
               <Card.Header>
                 
@@ -432,7 +431,7 @@ export default function ThemeChanger() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={9} sm={0} md={5}>
+          <Grid xs={12} sm={12} md={6}>
             <Card>
               <Card.Header>
                 <Grid.Container>
@@ -477,7 +476,7 @@ export default function ThemeChanger() {
         </Grid.Container>
 
         <Grid.Container justify="center" gap={3}>
-          <Grid xs={9} sm={9} md={5}>
+          <Grid xs={12} sm={12} md={6}>
             <Card>
               <Card.Header>
                 
@@ -515,7 +514,7 @@ export default function ThemeChanger() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={9} sm={0} md={5}>
+          <Grid xs={12} sm={12} md={6}>
             <Card>
               <Card.Header>
                 <Grid.Container>
@@ -578,73 +577,152 @@ export default function ThemeChanger() {
           </Text>
         </Row>
         <Spacer />
-        <Row justify="center">
-        <Grid xs={11} sm={11} md={9} >
+       <Grid.Container gap={2}>
+        <Grid xs={12} sm={4} md={4} >
+          
+          
+                    
             <Card>
               <Card.Header>
                 <Grid.Container>
                   <Grid sm={12}>
-                    <Text weight="bold">Websites Built</Text>
+                    <Text weight="bold">
+                  
+                    Fruitz IT
+                    
+
+                    </Text>
                   </Grid>
              
                 </Grid.Container>
               </Card.Header>
               <Card.Divider />
               <Card.Body>
-                <Grid.Container> 
-                  <Grid xs={12} alignItems="center" md={11} >
-                    <Badge variant="dot" />
-                    <Text css={{ ml: "$2", mr: "$9"  }} xs={12}>
-                    Fruitz IT
-                    </Text>
-
-                 
-                    <Link css={{ ml: "$2" }} href="https://www.fruitzit.ca" xs={12}>
-                    https://www.fruitzit.ca
-                    </Link>
-
-                    <Text css={{ ml: "$9", mr: "$9" }}  xs={12}>
-                     - Built with WordPress; 
-                    </Text>
-                  </Grid>
-                  <Grid xs={12} alignItems="center" md={11}>
-                    <Badge variant="dot" />
-                    <Text css={{ ml: "$2", mr: "$8"  }}>
-                  
-                     Whisping Pine RV Estates
-                    </Text>
-                    <Link css={{ ml: "$2" }} href="https://www.whisperingpinesrvpei.com/">
-                    https://www.whisperingpinesrvpei.com/
-                    </Link>
-
-                    <Text css={{ ml: "$9", mr: "$9"  }} >
-                     - Built with WordPress; 
-                    </Text>
-                  </Grid>
-                  <Grid xs={12} alignItems="center" md={11} >
-                    <Badge variant="dot" />
-                    <Text css={{ ml: "$2", mr: "$8"  }}>
-                      My portfolio site (SSR & Responsive & Dark/Light Theme)
-                    
-                    </Text>
-                    <Link css={{ ml: "$2" }} href="https://www.huizh.ca"> https://www.huizh.ca
-                    </Link>
-
-                    <Text css={{ ml: "$9", mr: "$9"  }}>
-                     - Built with NextJS, NextUI, ReactJS ; 
-                    </Text>
-                  </Grid>
-                  {/* <Grid xs={12} alignItems="center">
-                    <Badge variant="dot" />
+                <Grid.Container>
+                  <Grid xs={12} alignItems="center">
+                   
                     <Text css={{ ml: "$2" }}>
-                      RESTful API & GraphQL 
+                    - Built with WordPress; 
                     </Text>
-                  </Grid> */}
+                  </Grid>
+                
                 </Grid.Container>
               </Card.Body>
+              <Card.Divider />
+            <Card.Footer>
+              <Container justify="center">
+              <Link href="https://www.fruitzit.ca">www.fruitzit.ca</Link>
+              </Container>
+            </Card.Footer>
             </Card>
-          </Grid>
-          </Row>
+
+                    
+                  </Grid>
+
+                  <Grid xs={12} sm={4} md={4} >
+          
+          
+                    
+          <Card>
+            <Card.Header>
+              <Grid.Container>
+                <Grid sm={12}>
+                  <Text weight="bold">
+                
+                  Whisping Pine RV Estates
+                  
+
+                  </Text>
+                </Grid>
+           
+              </Grid.Container>
+            </Card.Header>
+            <Card.Divider />
+            <Card.Body>
+              <Grid.Container >
+                <Grid xs={12} alignItems="center">
+                 
+                  <Text css={{ ml: "$2" }}>
+                  - Built with WordPress; 
+                  </Text>
+                </Grid>
+                
+              </Grid.Container>
+            </Card.Body>
+            <Card.Divider />
+          <Card.Footer>
+            <Container justify="center">
+            <Link css={{ ml: "$2" }} href="https://www.whisperingpinesrvpei.com/">
+                    https://www.whisperingpinesrvpei.com/
+                    </Link>
+            </Container>
+          </Card.Footer>
+          </Card>
+
+                  
+                </Grid>
+
+                <Grid xs={12} sm={4} md={4} >
+          
+          
+                    
+          <Card>
+            <Card.Header>
+              <Grid.Container>
+                <Grid sm={12}>
+                  <Text weight="bold">
+                
+                  My portfolio site 
+                  
+
+                  </Text>
+                </Grid>
+           
+              </Grid.Container>
+            </Card.Header>
+            <Card.Divider />
+            <Card.Body>
+              <Grid.Container>
+                <Grid xs={12} alignItems="center">
+                 
+                  <Text css={{ ml: "$2" }}>
+                  - SSR & Responsive & Dark/Light Theme;
+                  </Text>
+                </Grid>
+                <Grid xs={12} alignItems="center">
+                 
+                  <Text css={{ ml: "$2" }}>
+                
+                  -  Built with Next.js & hosted on Vercel;
+                  </Text>
+                </Grid>
+                <Grid xs={12} alignItems="center">
+                 
+                  <Text css={{ ml: "$2" }}>
+                   - Source code on Github
+                  
+                  </Text>
+                </Grid>
+               
+              </Grid.Container>
+            </Card.Body>
+            <Card.Divider />
+          <Card.Footer>
+            <Container justify="center">
+            <Link css={{ ml: "$2" }} href="https://www.huizh.ca"> https://www.huizh.ca
+                    </Link>
+            </Container>
+          </Card.Footer>
+          </Card>
+
+                  
+                </Grid>
+
+</Grid.Container>
+                 
+           
+       
+          
         <Spacer />
         </Container>
         <Container fluid justify="center">
