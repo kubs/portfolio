@@ -119,9 +119,21 @@ export default function ThemeChanger() {
       </Grid.Container> */}
       <Grid.Container justify="center">
         <Grid fluid justify="center">
-          <Text
+          <Text hideIn="xs"
             
-            size={70}
+            size={80}
+            css={{
+              textGradient: "45deg, $yellow600 -20%, $red600 100%",
+              letterSpacing: "3px",
+              ml: "$2",
+            }}
+            weight="bold"
+          >
+            HUI ZHAO
+          </Text>
+          <Text showIn="xs"
+            
+            size={50}
             css={{
               textGradient: "45deg, $yellow600 -20%, $red600 100%",
               letterSpacing: "3px",
@@ -629,7 +641,7 @@ export default function ThemeChanger() {
                 <Grid sm={12}>
                   <Text weight="bold">
                 
-                  Whisping Pine RV Estates
+                  Whispering Pine RV Estates
                   
 
                   </Text>
@@ -653,7 +665,7 @@ export default function ThemeChanger() {
           <Card.Footer>
             <Container justify="center">
             <Link css={{ ml: "$2" }} href="https://www.whisperingpinesrvpei.com/">
-                    https://www.whisperingpinesrvpei.com/
+                    whisperingpinesrvpei.com
                     </Link>
             </Container>
           </Card.Footer>
